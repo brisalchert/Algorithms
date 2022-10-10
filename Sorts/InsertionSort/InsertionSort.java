@@ -54,5 +54,7 @@ public class InsertionSort {
                 System.out.print(list[i]);
             }
         }
+
+        input.close();
     }
 }
