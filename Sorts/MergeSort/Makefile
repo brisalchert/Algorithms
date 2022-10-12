@@ -9,4 +9,4 @@ run:
 	java $(filename)
 
 clean:
-	rm $(filename)
+	rm $(filename).class
