@@ -20,23 +20,12 @@ public class DoMergeSort {
         mergeSort(result, copy, start, mid);
         mergeSort(result, copy, mid, end);
 
-        int leftIndex = start;
-        int rightIndex = mid;
-        int resultIndex = start;
+        for(int index = start; index < mid; index++) {
+            result[index] = copy[index];
+        }
 
-        while(resultIndex < end) {
-            if(rightIndex >= end || (leftIndex < mid && copy[leftIndex] < copy[rightIndex])) {
-                result[resultIndex] = copy[leftIndex];
-
-                leftIndex++;
-            }
-            else {
-                result[resultIndex] = copy[rightIndex];
-
-                rightIndex++;
-            }
-
-            resultIndex++;
+        for(int index = mid; index < end; index++) {
+            result[index] = copy[index];
         }
     }
 }
