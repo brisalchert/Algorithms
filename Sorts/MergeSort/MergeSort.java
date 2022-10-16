@@ -13,5 +13,7 @@ public class MergeSort {
                 System.out.print(list[index]);
             }
         }
+
+        DoMergeSort.mergeSort(copy, list, 0, (list.length - 1));
     }
 }
