@@ -1,6 +1,6 @@
 filename = MergeSort
 
-all: compile, run
+all: compile run
 
 compile:
 	javac $(filename).java
