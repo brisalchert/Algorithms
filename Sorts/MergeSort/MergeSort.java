@@ -4,7 +4,7 @@ public class MergeSort {
         int[] copy = list;
 
         System.out.println();
-        System.out.print("The unsorted list: ");
+        System.out.print("The unsorted list:\t");
         for(int index = 0; index < list.length; index++) {
             if(index != (list.length - 1)) {
                 System.out.print(list[index] + ", ");
@@ -17,7 +17,7 @@ public class MergeSort {
         DoMergeSort.mergeSort(copy, list, 0, (list.length - 1));
 
         System.out.println();
-        System.out.print("The sorted list: ");
+        System.out.print("The sorted list:\t");
         for(int index = 0; index < list.length; index++) {
             if(index != (list.length - 1)) {
                 System.out.print(list[index] + ", ");
