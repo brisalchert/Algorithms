@@ -1,5 +1,6 @@
 public class DoMergeSort {
     public static void mergeSort(int[] copy, int[] result, int start, int end) {
+        // Base Cases
         if((end - start) < 2) {
             return;
         }
@@ -14,6 +15,7 @@ public class DoMergeSort {
             return;
         }
 
+        // Recursive Case
         int mid = (start + end) / 2;
         mergeSort(result, copy, start, mid);
         mergeSort(result, copy, mid, end);
