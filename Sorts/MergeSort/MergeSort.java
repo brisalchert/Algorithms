@@ -1,6 +1,6 @@
 public class MergeSort {
     public static void main(String[] args) {
-        int[] list = {4, 3, 2, 1};
+        int[] list = {72, 93, -12, 7, 186, -691, 51, 84, 3, -4, -5, 1, 8};
         int[] copyList = new int[list.length];
 
         for(int i = 0; i < list.length; i++) {
