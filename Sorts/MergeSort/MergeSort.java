@@ -1,5 +1,17 @@
 public class MergeSort {
     public static void main(String[] args) {
+        int[] list = {72, 12, 51, 7, 21, -6, 17, -56, 65, 91, 3};
+        int[] copy = list;
 
+        System.out.println();
+        System.out.print("The unsorted list: ");
+        for(int index = 0; index < list.length; index++) {
+            if(index != (list.length - 1)) {
+                System.out.print(list[index] + ", ");
+            }
+            else {
+                System.out.print(list[index]);
+            }
+        }
     }
 }
