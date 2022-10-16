@@ -13,5 +13,17 @@ public class DoMergeSort {
 
             return;
         }
+
+        int mid = (start + end) / 2;
+        mergeSort(result, copy, start, mid);
+        mergeSort(result, copy, mid, end);
+
+        for(int index = start; index < mid; index++) {
+            result[index] = copy[index];
+        }
+
+        for(int index = mid; index < end; index++) {
+            result[index] = copy[index];
+        }
     }
 }
