@@ -1,7 +1,11 @@
 public class MergeSort {
     public static void main(String[] args) {
-        int[] list = {72, 12, 51, 7, 21, -6, 17, -56, 65, 91, 3};
-        int[] copy = list;
+        int[] list = {4, 3, 2, 1};
+        int[] copyList = new int[list.length];
+
+        for(int i = 0; i < list.length; i++) {
+            copyList[i] = list[i];
+        }
 
         System.out.println();
         System.out.print("The unsorted list:\t");
@@ -14,7 +18,7 @@ public class MergeSort {
             }
         }
 
-        DoMergeSort.mergeSort(copy, list, 0, (list.length - 1));
+        DoMergeSort.mergeSort(copyList, list, 0, (list.length - 1));
 
         System.out.println();
         System.out.print("The sorted list:\t");
