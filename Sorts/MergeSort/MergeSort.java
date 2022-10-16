@@ -15,5 +15,18 @@ public class MergeSort {
         }
 
         DoMergeSort.mergeSort(copy, list, 0, (list.length - 1));
+
+        System.out.println();
+        System.out.print("The sorted list: ");
+        for(int index = 0; index < list.length; index++) {
+            if(index != (list.length - 1)) {
+                System.out.print(list[index] + ", ");
+            }
+            else {
+                System.out.print(list[index]);
+            }
+        }
+
+        System.out.println();
     }
 }
