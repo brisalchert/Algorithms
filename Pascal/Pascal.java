@@ -20,7 +20,7 @@ public class Pascal {
         nthRow = PascalTriangle.generateRow(n);
 
         System.out.println();
-        System.out.print("\tThe " + n + "th row of Pascal's Triangle: ");
+        System.out.print("\tRow " + n + " of Pascal's Triangle: ");
 
         for (int index = 0; index < nthRow.length; index++) {
             if (index < (nthRow.length - 1)) {
