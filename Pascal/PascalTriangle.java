@@ -32,7 +32,7 @@ public class PascalTriangle {
 
         }
 
-        if (i == 0 || i == n) {
+        if (i == 0 || i == (n - 1)) {
             rowValue = 1;
 
             return rowValue;
