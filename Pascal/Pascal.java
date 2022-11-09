@@ -17,7 +17,14 @@ public class Pascal {
         System.out.print("\tEnter row number n: ");
         n = input.nextInt();
 
-        nthRow = PascalTriangle.generateRow(n);
+        while (n < 1) {
+            System.out.println("\tError: input must be positive.");
+
+            System.out.print("\tEnter row number n: ");
+            n = input.nextInt();
+        }
+
+            nthRow = PascalTriangle.generateRow(n);
 
         System.out.println();
         System.out.print("\tRow " + n + " of Pascal's Triangle: ");
