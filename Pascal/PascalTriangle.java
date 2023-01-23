@@ -19,7 +19,6 @@ public class PascalTriangle {
 
     }
 
-
     //------------------------------------------------------------------
     //  Generates the ith value of the nth row of Pascal's Triangle.
     //------------------------------------------------------------------
