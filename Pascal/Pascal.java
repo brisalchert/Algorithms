@@ -24,7 +24,7 @@ public class Pascal {
             n = input.nextInt();
         }
 
-            nthRow = PascalTriangle.generateRow(n);
+        nthRow = PascalTriangle.generateRow(n);
 
         System.out.println();
         System.out.print("\tRow " + n + " of Pascal's Triangle: ");
